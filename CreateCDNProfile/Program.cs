@@ -17,7 +17,7 @@ namespace CreateCDNProfile
         static string tenantID = "Your-TenantID";
         static void Main(string[] args)
         {
-            string url = "https://management.chinacloudapi.cn/subscriptions/Your-SubID/resourceGroups/Your-esource-Group-Name/providers/Microsoft.Cdn/profiles/Your-CDN-Profile-Name?api-version=2019-04-15";
+            string url = "https://management.chinacloudapi.cn/subscriptions/Your-SubID/resourceGroups/Your-ResourceGroup-Name/providers/Microsoft.Cdn/profiles/Your-CDN-Profile-Name?api-version=2019-04-15";
             string cdnjson = "{\r\n  \"location\": \"Chinanorth\",\r\n  \"sku\": {\r\n    \"name\": \"Premium_ChinaCdn\"\r\n  }\r\n}";
             PutCreateCDNProfile(url,cdnjson);
             // The code provided will print ‘Hello World’ to the console.
